@@ -130,15 +130,15 @@ section{position:relative}
 .prodotto-img-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.1)}
 .prodotto-img-card img{max-width:100%;max-height:220px;object-fit:contain}
 
-/* CAFFE */
+/* CAFFE — fixed for transparent PNG */
 .caffe-section{background:#fff}
 .caffe-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
-.caffe-img{position:relative;border-radius:4px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.12)}
-.caffe-img img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;transition:transform .6s}
+.caffe-img{position:relative}
+.caffe-img img{width:100%;display:block;filter:drop-shadow(0 20px 40px rgba(0,0,0,.18));transition:transform .6s}
 .caffe-img:hover img{transform:scale(1.03)}
-.caffe-img .img-caption{position:absolute;bottom:0;left:0;right:0;padding:20px 24px;background:linear-gradient(transparent,rgba(0,0,0,.75));color:#fff}
-.caffe-img .img-caption strong{display:block;font-family:'Playfair Display',serif;font-size:15px;font-style:italic;margin-bottom:4px}
-.caffe-img .img-caption span{font-size:11px;opacity:.8;letter-spacing:.05em}
+.caffe-img .img-caption{position:relative;padding:20px 0 0;background:none;color:#1a1a1a}
+.caffe-img .img-caption strong{display:block;font-family:'Playfair Display',serif;font-size:15px;font-style:italic;margin-bottom:4px;color:var(--rosso-scuro)}
+.caffe-img .img-caption span{font-size:11px;color:var(--grigio);opacity:1;letter-spacing:.05em}
 
 /* CAPPUCCINO */
 .cappuccino-section{background:var(--crema)}
